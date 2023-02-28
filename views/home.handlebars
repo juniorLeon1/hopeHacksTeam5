@@ -16,6 +16,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&family=Open+Sans&display=swap" rel="stylesheet">
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -25,13 +29,14 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>SpeakEasy</title>
+    <title>SpeakEasy!</title>
   </head>
   <body>
 
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">SpeakEasy</a>
+    <a class="navbar-brand" href="/">SpeakEasy!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,22 +53,15 @@
 
 <header>
   <div class="absolute-center">
-    <h1>SpeakEasy</h1>
-    <p>Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!</p>
+    <h1>SpeakEasy!</h1>
+    {{!-- <p>Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!</p> --}}
+    <br>{{stuff}}</br>
+
   </div>
-<header>
+</header>
 
 
-    <div class="mode">
-      <label class="toggle" for="dark-mode-btn">
-        <div class="toggle-track">
-          <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
-          <span class="toggle-thumb"></span>
-          <img src="images/sun.png" alt="" />
-          <img src="images/moon.png" alt="" />
-        </div>
-      </label>
-    </div>
+  
     <div class="container">
       <div class="card input-wrapper">
         <div class="from">
@@ -89,14 +87,6 @@
           ></textarea>
           <div class="chars"><span id="input-chars">0</span> / 5000</div>
         </div>
-        <div class="card-bottom">
-          <p>Or choose your document!</p>
-          <label for="upload-document">
-            <span id="upload-title">Choose File</span>
-            <ion-icon name="cloud-upload-outline"></ion-icon>
-            <input type="file" id="upload-document" hidden />
-          </label>
-        </div>
       </div>
 
       <div class="center">
@@ -111,7 +101,7 @@
           <div class="dropdown-container" id="output-language">
             <div class="dropdown-toggle">
               <ion-icon name="globe-outline"></ion-icon>
-              <span class="selected" data-value="en">Englsih</span>
+              <span class="selected" data-value="en">English</span>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </div>
             <ul class="dropdown-menu">
@@ -127,16 +117,10 @@
           placeholder="Translated text will appear here"
           disabled
         ></textarea>
-        <div class="card-bottom">
-          <p>Download as a document!</p>
-          <button id="download-btn">
-            <span>Download</span>
-            <ion-icon name="cloud-download-outline"></ion-icon>
-          </button>
-        </div>
       </div>
     </div>
 
+<br></br>
 
 <div class="footer-clean">
         <footer>
@@ -150,7 +134,7 @@
                             <li><a href="#">Hosting</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 item">
+                    {{!-- <div class="col-sm-4 col-md-3 item">
                         <h3>About</h3>
                         <ul>
                             <li><a href="#">Company</a></li>
@@ -159,13 +143,13 @@
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
+                        <h3>About</h3>
                         <ul>
                             <li><a href="#">Job openings</a></li>
                             <li><a href="#">Employee success</a></li>
                             <li><a href="#">Benefits</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                         <p class="copyright">SpeakEasy @ 2023</p>
                     </div>
                 </div>
@@ -174,6 +158,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 
 
     {{!-- <script src="languages.js"></script>
