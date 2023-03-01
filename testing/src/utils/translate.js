@@ -1,6 +1,6 @@
-const request = require('request');
+const request = require('request')
 
-const inputText = 'dang'
+const inputText = 'Hello World!'
 const langFrom = 'en'
 const langTo = 'es'
 
@@ -17,15 +17,17 @@ const options = {
     from: langFrom,
     to: langTo,
     e: '',
-    q: [
-      inputText
-    ]
+    q: [inputText]
   },
   json: true
 };
 
-request(options, function (error, response, body) {
-	if (error) throw new Error(error);
+function call_api () {
+    request(options, function (error, response, body) {
+        if (error) throw new Error(error);
+    
+        console.log(body);
+    });
+}
 
-	console.log(body);
-});
+call_api()
