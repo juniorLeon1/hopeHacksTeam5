@@ -362,7 +362,6 @@ body.dark {
 
 .footer-clean {
     padding:50px 0;
-    /* background-color:white; */
     display: inline-block;
   }
 
@@ -406,9 +405,6 @@ body.dark {
       display: block; 
     }
 
-    /* svg {
-      height: 180vw;
-    } */
   }
   
   @media (max-width: 768px) {
@@ -424,46 +420,14 @@ body.dark {
       display: block; 
     }
   }
-  
-  /* @media (max-width: 600px) {
-    svg {
-      height: 250vw;
-    }
-  }
 
-  @media (max-width: 375px) {
-    svg {
-      height: 400vw;
-    }
-  } */
-
-  /* .footer-clean .item.social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid #ccc;
-    margin-left:10px;
-    margin-top:22px;
-    color:inherit;
-    opacity:0.75;
-  } */
-  
-  /* .footer-clean .item.social > a:hover {
-    opacity:0.9;
-  } */
   
   @media (max-width:991px) {
     .footer-clean .item.social > a {
       margin-top:40px;
     }
 
-    /* svg {
-      height: 180vw;
-    }  */
+    
 
     .justify-content-center {
       padding-left: 0px;
@@ -485,9 +449,6 @@ body.dark {
       margin-top:10px;
     }
 
-    /* svg {
-      height: 180vw;
-    } */
 
     .nav-link {
       display: block; 
@@ -500,3 +461,85 @@ body.dark {
     font-size:13px;
     opacity:0.6;
   }
+
+ /* This is for signUp below  */
+  
+
+  form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F4F4F4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="checkbox"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  input[type="checkbox"] {
+    margin-bottom: 30px;
+  }
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: navy;
+  }
+
+  /* Input box for password on log in page  */
+  .col-sm-10 {
+    flex: 0 0 auto;
+    padding-left: 40px;
+  }
+
+
+
+   h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+   }
+
+   h5 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+   }
+  
+
+  li {
+    text-align: center;
+}
+
+
+
+.enter-button {
+  padding-bottom: 20px;
+  width: 0%;
+}
+
+
+
+

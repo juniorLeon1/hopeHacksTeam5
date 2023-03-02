@@ -37,6 +37,18 @@ app.get('/about', function (req, res) {
     });
 });
 
+app.get('/signUp', function (req, res) {
+    res.render('signUp', {
+        prem: "Join SpeakEasy!'s Premium selection to learn more than 100+ languages to enhance your ability to communicate effectively. The Premium selection provides access to advanced features and a wider range of language options"
+    });
+});
+
+app.get('/log', function (req, res) {
+    res.render('log', {
+    });
+});
+
+
 // set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
