@@ -16,6 +16,21 @@ app.get('/', function (req, res) {
     });
 });
 
+// //set handlebar routes
+// app.get('/contact', function (req, res) {
+//     res.render('contact', {
+//         stuff: "This is stuff..."
+//     });
+// });
+
+//set handlebar routes
+app.get('/about', function (req, res) {
+    res.render('about', {
+        stuff: "This is stuff..."
+    });
+});
+
+
 // set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -24,3 +39,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.listen(PORT, () => console.log('Server Listening on port ' + PORT));
+
