@@ -1,10 +1,6 @@
 const request = require('request')
 
-const inputText = 'Hello World!' // textToTranslate ????
-const langFrom = 'en'
-const langTo = 'es'
-
-function call_api(textToTranslate) {
+function call_api(inputText) {
   const options = {
     method: 'POST',
     url: 'https://rapid-translate-multi-traduction.p.rapidapi.com/t',
@@ -15,15 +11,15 @@ function call_api(textToTranslate) {
       useQueryString: true
     },
     body: {
-      from: langFrom,
-      to: langTo,
+      from: 'en',
+      to: 'es',
       e: '',
       q: [inputText]
     },
     json: true
   };
 
-  request(options, {json:true}, (error, response, body) => {
+  request(options, (error, response, body) => {
     if (error) {
       console.error(error);
       return;
@@ -35,7 +31,7 @@ function call_api(textToTranslate) {
 
 }
 
-call_api()
+call_api('Hello World')
 
 
 
