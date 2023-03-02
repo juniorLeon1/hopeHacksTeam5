@@ -19,12 +19,6 @@ app.get('/', function (req, res) {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.get('/about', function (req, res) {
-    res.render('about', {
-        // stuff: "Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!"
-    });
-});
-
 
 app.post('/', (req, res) => {
     const textToTranslate = req.body.textToTranslate;
@@ -32,6 +26,12 @@ app.post('/', (req, res) => {
     // res.send('');
 });
 
+
+app.get('/about', function (req, res) {
+    res.render('about', {
+        // stuff: "Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!"
+    });
+});
 
 // set static folder
 app.use(express.static(path.join(__dirname, 'public')));
