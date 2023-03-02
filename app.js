@@ -3,12 +3,19 @@ const app = express();
 const exphbs = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser')
+const translate = require('./utils/translate')
+
+// console.log(translate)
 
 const PORT = process.env.PORT || 2000;
 
 //set handlebars middleware
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 //set handlebar routes
 app.get('/', function (req, res) {
@@ -17,13 +24,10 @@ app.get('/', function (req, res) {
     });
 });
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
 app.post('/', (req, res) => {
-    const textToTranslate = req.body.textToTranslate;
-    // call_api(textToTranslate);     *************
-    // res.send('');
+    res.send('home', {
+
+    })
 });
 
 
