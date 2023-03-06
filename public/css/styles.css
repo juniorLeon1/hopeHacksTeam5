@@ -29,7 +29,6 @@ background-color: #617073;
   display: inline;
 }
 
-<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -40,13 +39,11 @@ background-color: #617073;
 /* @import "compass/css3";
 
 body {
-=======
 .waviy {
   padding-bottom: 50px;
 }
 
 /* * {
->>>>>>> main
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -418,7 +415,8 @@ h1 {
   color: #ffffff;
   text-align: center;
   font-size: 48px;
-  margin-top: 20%;
+ 
+ 
 }
 
 
@@ -556,9 +554,7 @@ button[type="submit"]:hover {
   background-color: #0e4166;
   background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 } */
-    padding:50px 0;
-    display: inline-block;
-  }
+ 
 
 
   .footer-clean h3 {
