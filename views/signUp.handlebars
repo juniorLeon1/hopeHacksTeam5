@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta&family=Open+Sans&display=swap" rel="stylesheet">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgba(14, 65, 102, 0.86)
+        }
+    </style>
+</head>
+    
+
+  
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">SpeakEasy!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+          <a class="nav-link" href="/signUp">Sign Up for Premium</a>
+          <a class="nav-link" href="/log">Log In</a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+    <h1>Premium Subscription Contact Form</h1>
+    <h5>Join SpeakEasy!'s Premium Subscription to learn more than 100+ languages to enhance your ability to communicate effectively.</h5>
+    <form action="/subscribe" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="creditcard">Credit Card:</label>
+      <input type="text" id="creditcard" name="creditcard" required>
+      <label for="expirydate">Expiry Date:</label>
+      <input type="text" id="expirydate" name="expirydate" required>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required>
+      
+      <button type="submit">Sign up</button>
+    </form>
+
+
+
+<div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        {{!-- <h3>About</h3> --}}
+                        <ul>
+                            <li><a href="/about">About Us</a></li>
+                        </ul>
+                    </div>
+                      <div class="col-sm-4 col-md-3 item">
+                        {{!-- <h3>Log In</h3> --}}
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <ul>
+                            <li><a href="/log">Log In</a></li>
+                        </ul>
+                    </div>
+                        <p class="copyright">SpeakEasy! @ 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+  </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</html>
