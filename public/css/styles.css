@@ -63,7 +63,9 @@ body.dark {
   --text-color: #fff;
   --light-text-color: #58575c;
 }
-*/.container {
+*/
+
+.container {
   position: relative;
   /* width: 1200px; */
   /* padding: 0 20px; */
@@ -83,7 +85,7 @@ body.dark {
   gap: 20px;
   background: lightblue;
   border-style: 15px;
-  /* border-radius: 20px; */
+  border-radius: 20px;
 } /*
 .container .card .from {
   margin-right: 20px;
@@ -326,9 +328,9 @@ body.dark {
 }
 
 
- .fa-microphone {
+ /* .fa-microphone {
   color: red;
- }
+ } */
 
   header {
     text-align: center;
