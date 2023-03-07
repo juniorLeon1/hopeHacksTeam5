@@ -56,7 +56,7 @@ function call_api(finishedAPI, input='Translated text will appear here!') {
 //set handlebar routes
 app.get('/', (req, res) => {
     call_api(function(doneAPI) {
-        res.render('home', {
+        res.render('index', {
             stuff: "Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!",
             translated: doneAPI
         });
@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     call_api(function(doneAPI) {
-        res.render('home', {
+        res.render('index', {
             stuff: "Welcome to our language translator application! In today's connected world, communication is key, and our app is designed to help you break down language barriers and connect with people from all around the world. With our powerful translation technology, you can translate text and voice from one language to another in just seconds. Whether you're traveling, studying, or working with people from different countries, our app has accurate and efficient translation. Please explore the amazing features our app has to offer and start communicating with the world!",
             translated: doneAPI,
         });
