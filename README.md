@@ -52,12 +52,12 @@ The API we used has a 50 request limit per day. To get around this we got four A
 - npm dotenv
 - npm mysql2
 
-| Contributor | GitHub Username |
-| ----------- | ----------- |
-| Junior Leon | juniorLeon1 |
-| Alvaro Rodriguez-Salas | arodsalas |
-| Breana Young | BreCode13 |
-| Miguel Urdaneta | murdanetaos |
+| Contributor | Contribution | GitHub Username |
+| ----------- | ----------- | ----------- |
+| Junior Leon | Github Organization/API functionality | juniorLeon1 |
+| Alvaro Rodriguez-Salas | Home, Signup, and Login pages | arodsalas |
+| Breana Young | About, Signup, and Login pages | BreCode13 |
+| Miguel Urdaneta | SQL Database | murdanetaos |
 
 
 ## Contact
