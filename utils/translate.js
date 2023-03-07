@@ -31,7 +31,5 @@ function call_api(inputText) {
 
 }
 
-call_api('Hello World')
-
 
 module.exports = call_api;
