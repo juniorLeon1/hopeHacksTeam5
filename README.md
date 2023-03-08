@@ -38,6 +38,7 @@ The API we used has a 50 request limit per day. To get around this we got four A
 
 ## Credits
 ### Technologies we used:
+- Rapid Translate Multi Traduction API | link: https://rapidapi.com/sibaridev/api/rapid-translate-multi-traduction
 - VScode text editor
 - Git + Github
 - Node.js
