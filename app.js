@@ -16,14 +16,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 function call_api(finishedAPI, input='Translated text will appear here!') {
-    // Junior's API key: 54523f2d11msh4eaa24da65900c6p1f3717jsn48bde874ef56
-    // Alvaro's backup API key: a5cb1934a6msh8b958313d591befp144a8ejsn4f948d3fbcd0
-    // Andres' backup API key: 405cc0d305mshdfb277581fb56c2p1be2c7jsn3fc745800ade
-    // Diana's backup API key: ee07fa8c2fmsh59a35bc0f84ebd6p136e3bjsn3c1cefb45466
+
     const juniorKey = '54523f2d11msh4eaa24da65900c6p1f3717jsn48bde874ef56'
     const alvaroKey = 'a5cb1934a6msh8b958313d591befp144a8ejsn4f948d3fbcd0'
-    const andresKey = '405cc0d305mshdfb277581fb56c2p1be2c7jsn3fc745800ade'
-    const dianaKey = 'ee07fa8c2fmsh59a35bc0f84ebd6p136e3bjsn3c1cefb45466'
+    const miguelKey = '405cc0d305mshdfb277581fb56c2p1be2c7jsn3fc745800ade'
+    const breKey = 'ee07fa8c2fmsh59a35bc0f84ebd6p136e3bjsn3c1cefb45466'
 
     const options = {
     method: 'POST',
